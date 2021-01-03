@@ -1,0 +1,41 @@
+* {
+    box-sizing: border-box;
+}
+
+
+/* nav */
+
+header {
+    margin-bottom: auto;
+}
+
+.nav-link {
+    color: white;
+    font-size: 18px;
+}
+
+.btn {
+    width: 10%;
+    margin: 0 5px 0 5px;
+}
+
+@media (max-width: 375px) {
+    header {
+        margin-bottom: 35%;
+    }
+    .nav {
+        height: fit-content!important;
+    }
+    .nav-link {
+        margin: 15px 0 15px 0 !important;
+        font-size: 15px;
+        padding: 8px!important;
+    }
+}
+
+@media (max-width: 1031px) {
+    .btn {
+        width: 125px;
+        margin: 0 5px 0 5px;
+    }
+}
