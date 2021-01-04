@@ -14,7 +14,7 @@ header {
     font-size: 18px;
 }
 
-.btn {
+.btnInicio {
     width: 10%;
     margin: 0 5px 0 5px;
 }
@@ -34,8 +34,15 @@ header {
 }
 
 @media (max-width: 1031px) {
-    .btn {
+    .btnInicio {
         width: 125px;
         margin: 0 5px 0 5px;
     }
+}
+
+
+/* modal */
+
+.modal {
+    color: black;
 }
