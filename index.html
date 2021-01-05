@@ -15,7 +15,7 @@
     <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
         <header class="p-3">
             <div class="h-100">
-                <img class="float-md-start mb-0" src="./img/logo.png" alt="Logo" width="auto" height="65px">
+                <a href="./index.html"><img class="float-md-start mb-0" src="./img/logo.png" alt="Logo" width="auto" height="65px"></a>
                 <nav class="nav nav-masthead justify-content-between float-md-end h-100">
                     <a class="nav-link my-auto" href="#">Inicio</a>
                     <a class="nav-link my-auto" href="#">Sobre mí</a>
@@ -25,56 +25,65 @@
             </div>
         </header>
 
-        <main class="px-3">
-            <h1>Hola, soy <br> Xavier Jaramillo Vives.</h1>
-            <p class="lead">Un gran apasionado por la programación y la tecnología informática.</p>
-            <p class="lead">
-                <a href="./doc/cvXavierJaramillo.pdf" target="_blank" class="btn btn-primary fw-bold btnInicio">CV</a>
+        <main class="d-flex mx-auto p-3">
+            <div class="row">
+                <div class="col w-50 miniPresentacion">
+                    <div>
+                        <h1>Hola, soy <br> Xavier Jaramillo Vives.</h1>
+                        <p class="lead">Un gran apasionado por la programación y la tecnología informática.</p>
+                        <p class="lead">
+                            <a href="./doc/cvXavierJaramillo.pdf" target="_blank" class="btn btn-primary fw-bold btnInicio">CV</a>
 
-                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary fw-bold btnInicio" data-toggle="modal" data-target="#exampleModalCenter">
-                    Contacto
-                </button>
+                            <!-- Button trigger modal -->
+                            <button type="button" class="btn btn-primary fw-bold btnInicio" data-toggle="modal" data-target="#exampleModalCenter">
+                            Contacto
+                        </button>
 
-                <!-- Modal -->
-                <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLongTitle">Contacto</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
+                            <!-- Modal -->
+                            <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-centered" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title" id="exampleModalLongTitle">Enviame un correo.</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                        <span aria-hidden="true">&times;</span>
+                                                    </button>
+                                        </div>
+                                        <form action="./php/email.php">
+                                            <div class="modal-body">
+                                                <div class="mb-3">
+                                                    <label for="nombre" class="form-label float-start">Nombre:</label>
+                                                    <input type="nombre" name="nombre" class="form-control">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="email" class="form-label float-start">Para:</label>
+                                                    <input type="email" name="email" class="form-control" placeholder="xavijvives@gmail.com" readonly>
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="mensaje" class="form-label float-start">Mensaje:</label>
+                                                    <textarea class="form-control" name="mensaje" rows="3"></textarea>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                                                <input type="submit" class="btn btn-primary" value="Enviar">
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
                             </div>
-                            <form action="./php/email.php">
-                                <div class="modal-body">
-                                    <div class="mb-3">
-                                        <label for="nombre" class="form-label float-start">Nombre:</label>
-                                        <input type="nombre" name="nombre" class="form-control">
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="email" class="form-label float-start">Para:</label>
-                                        <input type="email" name="email" class="form-control" placeholder="xavijvives@gmail.com" readonly>
-                                    </div>
-                                    <div class="mb-3">
-                                        <label for="mensaje" class="form-label float-start">Mensaje:</label>
-                                        <textarea class="form-control" name="mensaje" rows="3"></textarea>
-                                    </div>
-                                </div>
-                                <div class="modal-footer">
-                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
-                                    <input type="submit" class="btn btn-primary" value="Enviar">
-                                </div>
-                            </form>
-                        </div>
+                        </p>
                     </div>
                 </div>
-            </p>
+                <div class="col w-50 imgDiv">
+                    <img src="./img/imgProgrammer.png" class="img-fluid" alt="Image programmer" width="100%" height="auto">
+                </div>
+            </div>
+
         </main>
 
         <footer class="mt-auto text-white-50">
             <p>Copyright © 2021 JaraDev. All Rights Reserved.</p>
-            <p>All Rights Reserved.</p>
         </footer>
     </div>
 

@@ -11,7 +11,7 @@ if(empty($nombre) || empty($email) || empty($mensaje)) {
 } else {
     mail('xavijvives@gmail.com', 'Webtech Message', $mensaje, 'Form: $nombre <$email>');
     echo "<script>alert('Correo enviado correctamente!');
-    window.history.log(-1);
+    header('Location: ../index.html');
     </script>";
     
 }

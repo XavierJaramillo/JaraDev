@@ -14,14 +14,9 @@ header {
     font-size: 18px;
 }
 
-.btnInicio {
-    width: 10%;
-    margin: 0 5px 0 5px;
-}
-
-@media (max-width: 375px) {
+@media (max-width: 380px) {
     header {
-        margin-bottom: 35%;
+        margin-bottom: 0;
     }
     .nav {
         height: fit-content!important;
@@ -33,16 +28,39 @@ header {
     }
 }
 
-@media (max-width: 1031px) {
-    .btnInicio {
-        width: 125px;
-        margin: 0 5px 0 5px;
-    }
+
+/* main */
+
+.btnInicio {
+    width: 125px;
+    margin: 5px;
 }
-
-
-/* modal */
 
 .modal {
     color: black;
+}
+
+.miniPresentacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 1031px) {
+    .btnInicio {
+        width: 125px;
+        margin: 5px;
+    }
+}
+
+@media (max-width: 380px) {
+    .img-fluid {
+        display: none;
+    }
+    .imgDiv {
+        display: none;
+    }
+    header {
+        margin-bottom: 19%;
+    }
 }
