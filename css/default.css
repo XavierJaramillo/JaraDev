@@ -11,10 +11,10 @@ header {
 
 .nav-link {
     color: white;
-    font-size: 18px;
+    font-size: 2vh;
 }
 
-@media (max-width: 380px) {
+@media (max-width: 700px) {
     header {
         margin-bottom: 0;
     }
@@ -23,8 +23,14 @@ header {
     }
     .nav-link {
         margin: 15px 0 15px 0 !important;
-        font-size: 15px;
+        font-size: 2vh;
         padding: 8px!important;
+    }
+}
+
+@media (max-width: 375px) {
+    .nav-link {
+        font-size: 1.5vh;
     }
 }
 
@@ -40,7 +46,7 @@ header {
     color: black;
 }
 
-.miniPresentacion {
+.centroDiv {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,7 +59,7 @@ header {
     }
 }
 
-@media (max-width: 380px) {
+@media (max-width: 700px) {
     .img-fluid {
         display: none;
     }
@@ -62,5 +68,29 @@ header {
     }
     header {
         margin-bottom: 19%;
+    }
+    .titulo {
+        text-align: center!important;
+    }
+}
+
+
+/* sobre mi */
+
+#box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    flex-wrap: wrap-reverse;
+}
+
+@media (max-width: 700px) {
+    .divImg {
+        width: 100%!important;
+    }
+    .scroller {
+        overflow: auto;
+        padding: 10px!important;
     }
 }
