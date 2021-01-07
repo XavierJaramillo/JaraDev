@@ -40,7 +40,8 @@ header {
 
 /* main */
 
-.inicioMain {
+#inicio {
+    display: flex;
     margin-right: 6%;
     margin-left: 6%;
 }
@@ -68,7 +69,7 @@ header {
 }
 
 @media (max-width: 700px) {
-    .inicioMain {
+    #inicio {
         margin-top: 15%;
         margin-right: 0;
         margin-left: 0;
@@ -82,21 +83,20 @@ header {
     header {
         margin-bottom: 0!important;
     }
-    .titulo {
-        text-align: center!important;
-    }
+    .titulo,
     .pres {
         text-align: center!important;
     }
     .divPresentacion {
         width: 100%!important;
+        padding: 0;
     }
 }
 
 
 /* sobre mi */
 
-.sobremi {
+#sobremi {
     margin-right: 6%;
     margin-left: 6%;
 }
@@ -150,8 +150,12 @@ header {
     .divImg {
         width: 100%!important;
     }
-    .sobremi {
+    #sobremi {
         height: 450px;
         overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    .row {
+        padding: 5px!important;
     }
 }

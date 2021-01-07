@@ -17,21 +17,21 @@
             <div class="h-100">
                 <a href="./index.html"><img class="float-md-start mb-0" src="./img/logo.png" alt="Logo" width="auto" height="85px"></a>
                 <nav class="nav justify-content-between float-md-end h-100">
-                    <a class="nav-link my-auto" href="#">Inicio</a>
-                    <a class="nav-link my-auto" href="#">Sobre mí</a>
-                    <a class="nav-link my-auto" href="#">Experiencia</a>
-                    <a class="nav-link my-auto" href="#">Proyectos</a>
+                    <a class="nav-link my-auto" href="#" onclick="setPanel('inicio')">Inicio</a>
+                    <a class="nav-link my-auto" href="#" onclick="setPanel('sobremi')">Sobre mí</a>
+                    <a class="nav-link my-auto" href="#" onclick="setPanel('experiencia')">Experiencia</a>
+                    <a class="nav-link my-auto" href="#" onclick="setPanel('proyectos')">Proyectos</a>
                 </nav>
             </div>
         </header>
 
-        <main class="inicioMain d-flex p-3">
-            <div class="row w-100">
+        <main class="p-3" id="inicio" style="display: none;">
+            <div class="row">
                 <div class="col-6 centroDiv divPresentacion">
-                    <div>
+                    <div class="mx-auto">
                         <h1 class="text-start titulo">Hola, soy <br> Xavier Jaramillo Vives.</h1>
                         <p class="lead text-start pres">Un gran apasionado por la programación y la tecnología informática.</p>
-                        <p class="lead">
+                        <div class="lead">
                             <a href="./doc/cvXavierJaramillo.pdf" target="_blank" class="btn btn-primary fw-bold btnInicio">CV</a>
 
 
@@ -72,7 +72,7 @@
                                     </div>
                                 </div>
                             </div>
-                        </p>
+                        </div>
                     </div>
                 </div>
                 <div class="col-6 imgDiv">
@@ -81,7 +81,7 @@
             </div>
         </main>
 
-        <!-- <main class="p-3 sobremi">
+        <main class="p-3" id="sobremi" style="display: none;">
             <div class="row sobremiRow" id="box">
                 <div class="col">
                     <div class="row my-auto p-5">
@@ -108,7 +108,15 @@
                     <img class="m-auto" src="img/imgProgrammer.png" alt="Imagen de Xavier Jaramillo Vives" height="auto" width="70%">
                 </div>
             </div>
-        </main> -->
+        </main>
+
+        <main class="p-3" id="experiencia" style="display: none;">
+            <p>todo Experiencia</p>
+        </main>
+
+        <main class="p-3" id="proyectos" style="display: none;">
+            <p>todo Proyectos</p>
+        </main>
 
         <footer class="mt-auto text-white-50">
             <p>Copyright © 2021 JaraDev. All Rights Reserved.</p>
