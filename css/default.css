@@ -88,6 +88,9 @@ header {
     .pres {
         text-align: center!important;
     }
+    .divPresentacion {
+        width: 100%!important;
+    }
 }
 
 
