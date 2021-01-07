@@ -7,6 +7,8 @@
 
 header {
     margin-bottom: auto;
+    margin-right: 5%;
+    margin-left: 5%;
 }
 
 .nav-link {
@@ -23,6 +25,10 @@ header {
         font-size: 2vh;
         padding: 8px!important;
     }
+    header {
+        margin-right: 0;
+        margin-left: 0;
+    }
 }
 
 @media (max-width: 375px) {
@@ -33,6 +39,11 @@ header {
 
 
 /* main */
+
+.inicioMain {
+    margin-right: 6%;
+    margin-left: 6%;
+}
 
 .btnInicio {
     width: 125px;
@@ -59,6 +70,8 @@ header {
 @media (max-width: 700px) {
     .inicioMain {
         margin-top: 15%;
+        margin-right: 0;
+        margin-left: 0;
     }
     .img-fluid {
         display: none;
@@ -72,10 +85,18 @@ header {
     .titulo {
         text-align: center!important;
     }
+    .pres {
+        text-align: center!important;
+    }
 }
 
 
 /* sobre mi */
+
+.sobremi {
+    margin-right: 6%;
+    margin-left: 6%;
+}
 
 #box {
     display: flex;
