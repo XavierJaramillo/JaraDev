@@ -7,6 +7,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/default.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
     <title>Home | JaraDev</title>
 </head>
 
@@ -15,7 +16,7 @@
     <div class="d-flex w-100 h-100 p-3 mx-auto flex-column">
         <header class="p-3">
             <div class="h-100">
-                <a href="./index.html"><img class="float-md-start mb-0" src="./img/logo.png" alt="Logo" width="auto" height="85px"></a>
+                <a href="./index.php"><img class="float-md-start mb-0" src="./img/logo.png" alt="Logo" width="auto" height="85px"></a>
                 <nav class="nav justify-content-between float-md-end h-100">
                     <a class="nav-link my-auto" href="#" onclick="setPanel('inicio')">Inicio</a>
                     <a class="nav-link my-auto" href="#" onclick="setPanel('sobremi')">Sobre mí</a>
@@ -26,14 +27,13 @@
         </header>
 
         <main class="p-3" id="inicio" style="display: none;">
-            <div class="row">
+            <div class="row w-100 inicioRow">
                 <div class="col-6 centroDiv divPresentacion">
                     <div class="mx-auto">
                         <h1 class="text-start titulo">Hola, soy <br> Xavier Jaramillo Vives.</h1>
                         <p class="lead text-start pres">Un gran apasionado por la programación y la tecnología informática.</p>
                         <div class="lead">
                             <a href="./doc/cvXavierJaramillo.pdf" target="_blank" class="btn btn-primary fw-bold btnInicio">CV</a>
-
 
                             <button type="button" class="btn btn-primary fw-bold btnInicio" data-toggle="modal" data-target="#exampleModalCenter">
                                 Contacto
@@ -52,12 +52,8 @@
                                         <form action="./php/email.php">
                                             <div class="modal-body">
                                                 <div class="mb-3">
-                                                    <label for="nombre" class="form-label float-start">Nombre:</label>
-                                                    <input type="nombre" name="nombre" class="form-control">
-                                                </div>
-                                                <div class="mb-3">
-                                                    <label for="email" class="form-label float-start">Para:</label>
-                                                    <input type="email" name="email" class="form-control" placeholder="xavijvives@gmail.com" readonly>
+                                                    <label for="emailEmpresa" class="form-label float-start">De:</label>
+                                                    <input type="email" name="emailEmpresa" class="form-control" placeholder="ejemplo@gmail.com">
                                                 </div>
                                                 <div class="mb-3">
                                                     <label for="mensaje" class="form-label float-start">Mensaje:</label>
@@ -81,31 +77,42 @@
             </div>
         </main>
 
-        <main class="p-3" id="sobremi" style="display: none;">
+        <main class="p-1" id="sobremi" style="display: none;">
             <div class="row sobremiRow" id="box">
                 <div class="col">
                     <div class="row my-auto p-5">
                         <div class="col-12">
-                            <h2 class="text-start mb-0">Sobre mí</h2><br>
+                            <h2 class="text-start mb-0">Sobre mí 🚀</h2><br>
                             <p class="text-start mb-5">
-                                Hola, Soy Xavier Jaramillo Vives tengo 21 años, siempre me ha interesado el mundo de la programación. Por ello empecé a formarme para poderme dedicar a al desarrollo de páginas web
+                                Hola, mi nombre es Xavier Jaramillo Vives, tengo 21 años. <br> Actualmente estoy formandome como desarrollador web. Me considero una persona muy resolutiva y autodidacta.
                             </p>
                         </div>
                         <div class="col-12">
-                            <h2 class="text-start mb-0">Mis conocimientos</h2><br>
+                            <h2 class="text-start mb-0">Mis conocimientos 📚</h2><br>
                             <p class="text-start">
                                 A dia de hoy tengo tres Ciclos de Grado Superior:
                             </p>
                             <ul class="text-start">
-                                <li>ASIR (Administración de sistemas informáticos en red).</li>
+                                <li>DAW (Desarrollo de aplicaciones web).</li>
                                 <li>DAM (Desarrollo de aplicaciones multiplataforma).</li>
-                                <li>DAM (Desarrollo de aplicaciones web).</li>
+                                <li>ASIR (Administración de sistemas informáticos en red).</li>
                             </ul>
+                        </div>
+                        <div class="row mx-auto d-flex justify-content-center">
+                            <div class="col-auto">
+                                <a href="https://github.com/XavierJaramillo" target="_blank"><i class="fab fa-github"></i></a>
+                            </div>
+                            <div class="col-auto">
+                                <a href="https://www.linkedin.com/in/xavier-jaramillo-vives-44b612182" target="_blank"><i class="fab fa-linkedin"></i></a>
+                            </div>
+                            <div class="col-auto">
+                                <a href="mailto:xavijvives@gmail.com" target="_blank"><i class="far fa-envelope"></i></a>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-auto w-50 p-2 divImg">
-                    <img class="m-auto" src="img/imgProgrammer.png" alt="Imagen de Xavier Jaramillo Vives" height="auto" width="70%">
+                <div class="col-auto w-50 divImg">
+                    <img class="m-auto" src="img/xavi.png" alt="Imagen de Xavier Jaramillo Vives" height="auto" width="100%">
                 </div>
             </div>
         </main>

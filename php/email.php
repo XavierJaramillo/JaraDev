@@ -1,18 +1,16 @@
 <?php
 
 //Recogemos variables
-$nombre = $_REQUEST['nombre'];
-$email = $_REQUEST['email'];
+$emailEmpresa = $_REQUEST['emailEmpresa'];
 $mensaje = $_REQUEST['mensaje'];
 
 //Validamos que no hay variables con valor nulo
-if(empty($nombre) || empty($email) || empty($mensaje)) {
+if(empty($emailEmpresa) || empty($mensaje)) {
     echo "<script>alert('Hay algun valor nulo!')</script>";
 } else {
-    mail('xavijvives@gmail.com', 'Webtech Message', $mensaje, 'Form: $nombre <$email>');
-    echo "<script>alert('Correo enviado correctamente!');
-    header('Location: ../index.html');
-    </script>";
-    
+    $cabeceras = 'From: ' . $emailEmpresa;
+    mail('xavijvives@gmail.com', 'Correo portfolio', $mensaje, $cabeceras);
+    header('Location: ../index.php');
 }
+
 ?>
