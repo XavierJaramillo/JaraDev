@@ -1,7 +1,6 @@
 * {
     box-sizing: border-box;
     font-family: 'Inter', sans-serif;
-    color: white;
 }
 
 html,
@@ -124,10 +123,9 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid black;
     transition: border-radius ease 0.5s;
     flex-wrap: wrap-reverse;
-    background: #1D1F20;
+    background-color: #353b48;
     position: relative;
     border-radius: 3px;
 }
@@ -188,4 +186,14 @@ header {
     .row {
         padding: 5px!important;
     }
+}
+
+
+/* PARTICULAS */
+
+canvas {
+    margin-top: 8%;
+    position: absolute;
+    z-index: -1;
+    height: 83%!important;
 }
