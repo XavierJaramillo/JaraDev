@@ -8,22 +8,22 @@
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/default.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
     <title>Home | JaraDev</title>
 </head>
 
-<body class="d-flex h-100 text-center text-white bg-dark">
+<body>
 
-    <div class="d-flex w-100 h-100 p-1 mx-auto flex-column">
-        <header class="p-3">
-            <div class="h-100">
-                <a href="./index.php"><img class="float-md-start mb-0" src="./img/logo.png" alt="Logo" width="auto" height="85px"></a>
-                <nav class="nav justify-content-between float-md-end h-100">
-                    <a class="nav-link my-auto" href="#" onclick="setPanel('inicio')">Inicio</a>
-                    <a class="nav-link my-auto" href="#" onclick="setPanel('sobremi')">Sobre mí</a>
-                    <a class="nav-link my-auto" href="#" onclick="setPanel('experiencia')">Experiencia</a>
-                    <a class="nav-link my-auto" href="#" onclick="setPanel('proyectos')">Proyectos</a>
-                </nav>
-            </div>
+    <div class="d-flex w-100 h-100 mx-auto flex-column">
+        <header class="w-100">
+            <a href="./index.php"><img class="float-md-start mb-0" src="./img/logo.png" alt="Logo" width="auto" height="85px"></a>
+            <nav class="nav justify-content-between float-md-end h-100">
+                <a class="nav-link my-auto" href="#" onclick="setPanel('inicio')">Inicio</a>
+                <a class="nav-link my-auto" href="#" onclick="setPanel('sobremi')">Sobre mí</a>
+                <a class="nav-link my-auto" href="#" onclick="setPanel('experiencia')">Experiencia</a>
+                <a class="nav-link my-auto" href="#" onclick="setPanel('proyectos')">Proyectos</a>
+            </nav>
         </header>
 
         <main class="p-3" id="inicio" style="display: none;">
@@ -80,11 +80,12 @@
         <main class="p-1" id="sobremi" style="display: none;">
             <div class="row sobremiRow" id="box">
                 <div class="col">
-                    <div class="row my-auto p-2">
+                    <div class="row my-auto p-5">
                         <div class="col-12">
                             <h2 class="text-start mb-0">Sobre mí 🚀</h2><br>
                             <p class="text-start mb-5">
-                                Hola, mi nombre es Xavier Jaramillo Vives, tengo 21 años. <br> Actualmente estoy formandome como desarrollador web. Me considero una persona muy resolutiva y autodidacta.
+                                Hola, mi nombre es Xavier Jaramillo Vives, tengo 21 años. Actualmente estoy formandome como desarrollador web. <br><br> Me considero una persona resolutiva y autodidacta... Con ganas de plantearme nuevos retos y adquirir
+                                nuevos conocimientos. Mi objetivo al desarrollar código, es que este sea limpio, eficaz y escalable.
                             </p>
                         </div>
                         <div class="col-12">
@@ -112,7 +113,7 @@
                     </div>
                 </div>
                 <div class="col-auto w-50 divImg">
-                    <img class="m-auto" src="img/xavi.png" alt="Imagen de Xavier Jaramillo Vives" height="auto" width="100%">
+                    <img class="m-auto border-5" src="img/xavi.png" alt="Imagen de Xavier Jaramillo Vives" height="auto" width="50%">
                 </div>
             </div>
         </main>
@@ -126,7 +127,7 @@
         </main>
 
         <footer class="mt-auto text-white-50">
-            <p>Copyright © 2021 JaraDev. All Rights Reserved.</p>
+            <p class="mb-0 pb-1">Copyright © 2021 JaraDev.</p>
         </footer>
     </div>
 

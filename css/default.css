@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    color: white;
 }
 
 html,
@@ -8,13 +10,21 @@ body {
     min-height: 100%!important;
 }
 
+body {
+    display: flex;
+    height: 100%;
+    text-align: center;
+    color: white;
+    background-color: #353b48;
+}
+
 
 /* nav */
 
 header {
     margin-bottom: auto;
-    margin-right: 5%;
-    margin-left: 5%;
+    padding: 1% 7% 1% 7%;
+    background-color: #272d35;
 }
 
 .nav-link {
@@ -34,6 +44,7 @@ header {
     header {
         margin-right: 0;
         margin-left: 0;
+        padding: 4% 0 0 0;
     }
 }
 
@@ -124,15 +135,15 @@ header {
 #box:after {
     content: '';
     position: absolute;
-    top: calc(-1 * 10px);
-    left: calc(-1 * 10px);
-    height: calc(100% + 10px * 2);
-    width: calc(100% + 10px * 2);
+    top: calc(-1 * 7px);
+    left: calc(-1 * 7px);
+    height: calc(100% + 7px * 2);
+    width: calc(100% + 7px * 2);
     background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
     border-radius: calc(2 * 3px);
     z-index: -1;
     animation: animatedgradient 3s ease alternate infinite;
-    background-size: 300% 300%;
+    background-size: 200% 200%;
 }
 
 @keyframes animatedgradient {
@@ -155,14 +166,24 @@ header {
     width: fit-content!important;
 }
 
+@media (max-width: 1262px) {
+    .divImg {
+        display: none;
+    }
+}
+
 @media (max-width: 700px) {
     .divImg {
         width: 100%!important;
     }
     #sobremi {
+        margin: auto 1% auto 1%;
         height: 450px;
         overflow-y: scroll;
         overflow-x: hidden;
+    }
+    .divImg {
+        display: flex;
     }
     .row {
         padding: 5px!important;
